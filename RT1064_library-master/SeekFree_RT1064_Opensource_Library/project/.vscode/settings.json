@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "headfile.h": "c",
+        "pid.h": "c",
+        "posture.h": "c",
+        "matrix.h": "c",
+        "ekf.h": "c",
+        "chassis.h": "c",
+        "imgproc.h": "c",
+        "flash_param.h": "c",
+        "circle.h": "c",
+        "debugger.h": "c",
+        "main.h": "c"
+    }
+}
