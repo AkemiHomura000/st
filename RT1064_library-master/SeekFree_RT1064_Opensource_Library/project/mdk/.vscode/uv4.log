@@ -8,6 +8,14 @@ pid.c(35): warning: implicit declaration of function 'fabs' is invalid in C99 [-
                                                                        ^
 2 warnings generated.
 compiling pid.c...
+garage.c(4): warning: In file included from...../mdk/motor.h(4): warning: In file included from...../mdk/headfile.h(14): warning: In file included from...../mdk/chassis.h(5): warning: In file included from...../mdk/posture.h(4): warning: In file included from...../mdk/matrix.h(340): warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+../mdk/matrix.h(345): warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+2 warnings generated.
+compiling garage.c...
 motor.c(1): warning: In file included from...../mdk/motor.h(4): warning: In file included from...../mdk/headfile.h(14): warning: In file included from...../mdk/chassis.h(5): warning: In file included from...../mdk/posture.h(4): warning: In file included from...../mdk/matrix.h(340): warning: non-void function does not return a value [-Wreturn-type]
 }
 ^
@@ -24,33 +32,6 @@ car_move.c(1): warning: In file included from...../mdk/car_move.h(4): warning: I
 ^
 2 warnings generated.
 compiling car_move.c...
-../user/src/main.c(2): warning: In file included from...../mdk\posture.h(4): warning: In file included from...../mdk/matrix.h(340): warning: non-void function does not return a value [-Wreturn-type]
-}
-^
-../mdk/matrix.h(345): warning: non-void function does not return a value [-Wreturn-type]
-}
-^
-../user/src/main.c(343): warning: non-void function does not return a value in all control paths [-Wreturn-type]
-}
-^
-3 warnings generated.
-compiling main.c...
-circle.c(2): warning: In file included from...../mdk/motor.h(4): warning: In file included from...../mdk/headfile.h(14): warning: In file included from...../mdk/chassis.h(5): warning: In file included from...../mdk/posture.h(4): warning: In file included from...../mdk/matrix.h(340): warning: non-void function does not return a value [-Wreturn-type]
-}
-^
-../mdk/matrix.h(345): warning: non-void function does not return a value [-Wreturn-type]
-}
-^
-2 warnings generated.
-compiling circle.c...
-garage.c(4): warning: In file included from...../mdk/motor.h(4): warning: In file included from...../mdk/headfile.h(14): warning: In file included from...../mdk/chassis.h(5): warning: In file included from...../mdk/posture.h(4): warning: In file included from...../mdk/matrix.h(340): warning: non-void function does not return a value [-Wreturn-type]
-}
-^
-../mdk/matrix.h(345): warning: non-void function does not return a value [-Wreturn-type]
-}
-^
-2 warnings generated.
-compiling garage.c...
 debugger.c(3): warning: In file included from...../mdk/headfile.h(14): warning: In file included from...../mdk/chassis.h(5): warning: In file included from...../mdk/posture.h(4): warning: In file included from...../mdk/matrix.h(340): warning: non-void function does not return a value [-Wreturn-type]
 }
 ^
@@ -59,6 +40,14 @@ debugger.c(3): warning: In file included from...../mdk/headfile.h(14): warning: 
 ^
 2 warnings generated.
 compiling debugger.c...
+circle.c(2): warning: In file included from...../mdk/motor.h(4): warning: In file included from...../mdk/headfile.h(14): warning: In file included from...../mdk/chassis.h(5): warning: In file included from...../mdk/posture.h(4): warning: In file included from...../mdk/matrix.h(340): warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+../mdk/matrix.h(345): warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+2 warnings generated.
+compiling circle.c...
 cross.c(2): warning: In file included from...../mdk/motor.h(4): warning: In file included from...../mdk/headfile.h(14): warning: In file included from...../mdk/chassis.h(5): warning: In file included from...../mdk/posture.h(4): warning: In file included from...../mdk/matrix.h(340): warning: non-void function does not return a value [-Wreturn-type]
 }
 ^
@@ -67,7 +56,18 @@ cross.c(2): warning: In file included from...../mdk/motor.h(4): warning: In file
 ^
 2 warnings generated.
 compiling cross.c...
+../user/src/main.c(2): warning: In file included from...../mdk\posture.h(4): warning: In file included from...../mdk/matrix.h(340): warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+../mdk/matrix.h(345): warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+../user/src/main.c(323): warning: non-void function does not return a value in all control paths [-Wreturn-type]
+}
+^
+3 warnings generated.
+compiling main.c...
 linking...
 Program Size: Code=78536 RO-data=13644 RW-data=1444416 ZI-data=82852  
 ".\Objects\rt1064.axf" - 0 Error(s), 17 Warning(s).
-Build Time Elapsed:  00:00:04
+Build Time Elapsed:  00:00:13

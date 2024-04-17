@@ -125,23 +125,6 @@ enum track_type_e track_type = TRACK_RIGHT;
 
 int main(void)
 {
-    /*
-    clock_init(SYSTEM_CLOCK_600M);
-    debug_init();
-    system_delay_ms(300);
-    st_pwm_init();
-    st_encoder_init();
-    st_imu_init();
-    interrupt_global_enable(0);
-    while (1)
-    {
-        double yaw = st_get_yaw();
-        st_w_kf_recount();
-        st_yaw_control(30, yaw);
-        st_print_kf_result();
-        system_delay_ms(50);
-    }
-        */
     clock_init(SYSTEM_CLOCK_600M);
     debug_init();
     system_delay_ms(300);
@@ -150,7 +133,6 @@ int main(void)
     st_imu_init();
     pit_ms_init(PIT_CH2, 50); // 底盘控制频率20hz
     interrupt_global_enable(0);
-
     EnableGlobalIRQ(0);
 
     while (1)
@@ -160,8 +142,6 @@ int main(void)
          * @todo 根据角度差进行角度环的控制，暂不清楚主循环每次耗时，暂定使用中断来控制地盘运动：使用角度增量控制有效避免累计误差问题
          */
         get_angel();
-
-        system_delay_ms(50);
     }
 }
 int angle_form_center_line_status;  // 中线角度差是否更新
